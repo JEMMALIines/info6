@@ -1,0 +1,2 @@
+# info6
+test
