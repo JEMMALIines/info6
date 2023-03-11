@@ -1,5 +1,6 @@
 package tn.esprit.spring.info6.entities;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.*;
 import tn.esprit.spring.info6.enums.Specialite;
 
@@ -27,6 +28,7 @@ public class Contrat implements Serializable {
     private Boolean archive;
     private Integer montantContrat;
     @ToString.Exclude
+    @JsonIgnore
     @ManyToOne
     private Etudiant etudiants;
 
