@@ -27,7 +27,7 @@ public class ContratController {
     }
 
 
-    @PostMapping("/add-co00ntrat")
+    @PostMapping("/add-contrat")
     Contrat addEtudiant(@RequestBody Contrat contrat){
         return  contratService.addContrat(contrat);
     }
